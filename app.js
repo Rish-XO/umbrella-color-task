@@ -5,6 +5,7 @@ const previewImage = document.querySelector("#preview");
 const fileBox = document.querySelector('label')
 const logoInput = document.getElementById('file');
 const logoPreview = document.getElementById('logo-preview');
+const loader = document.getElementById("loader");
 
 
 // changing color of body and image 
