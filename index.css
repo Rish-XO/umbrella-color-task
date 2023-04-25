@@ -134,6 +134,7 @@ label {
   
 /* logo img style*/
 #logo-preview {
+  display: none;
   border: none ;
   width: 100px;
   height: 50px;
