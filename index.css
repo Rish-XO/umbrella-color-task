@@ -1,0 +1,99 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  /* image style */
+  .left img {
+    max-width: 90%;
+    margin-left: 40px;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* button style */
+  
+  button {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    
+  }
+
+  /* button color */
+  
+  .pink {
+    background-color: rgb(232, 84, 108);
+  }
+  
+  .blue {
+    background-color: rgb(29, 127, 255);
+  }
+  
+  .yellow {
+    background-color: rgb(215, 215, 48);
+  }
+
+/* text style */
+
+p {
+    margin-top: 10px; 
+}
+
+.instructions {
+    font-size: smaller;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.bottom-para {
+    text-align: left;
+}
+  
+  input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+
+  
