@@ -1,5 +1,5 @@
 body {
-    background-color: #f2f2f2;
+    background-color: rgb(172, 236, 252);
     font-family: Arial, sans-serif;
     margin: 0;
   }
@@ -20,6 +20,7 @@ body {
   
   .left {
     flex: 1;
+    position: relative;
   }
   
   /* image style */
@@ -131,3 +132,13 @@ label {
  margin-right: 70px;
 }
   
+/* logo img style*/
+#logo-preview {
+  border: none ;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-80%, -50%);
+}

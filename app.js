@@ -1,9 +1,10 @@
 const pinkButton = document.querySelector(".pink");
 const blueButton = document.querySelector(".blue");
 const yellowButton = document.querySelector(".yellow");
-const fileInput = document.querySelector("input[type='file']");
 const previewImage = document.querySelector("#preview");
 const fileBox = document.querySelector('label')
+const logoInput = document.getElementById('file');
+const logoPreview = document.getElementById('logo-preview');
 
 blueButton.addEventListener("click", function() {
   previewImage.src = "./Blue umbrella.png";
@@ -26,6 +27,15 @@ yellowButton.addEventListener("click", function() {
 //   previewImage.style.display = "block";
 });
 
-// function previewImage(event) {
-//   const file = event.target.files[0];
-//   const reader = new
+
+
+logoInput.addEventListener('change', function(e) {
+  const file = this.files[0];
+  const reader = new FileReader();
+  reader.addEventListener('load', function() {
+    logoPreview.setAttribute('src', reader.result);
+  });
+  reader.readAsDataURL(file);
+  const fileName = e.target.files[0].name;
+  fileBox.innerText = fileName;
+});
