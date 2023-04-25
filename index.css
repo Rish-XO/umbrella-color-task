@@ -58,7 +58,12 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 20px;
-    
+  }
+
+  button:active {
+    border: 2rem;
+    border-color: crimson;
+    color: black;
   }
 
   /* button color */
